@@ -1,7 +1,7 @@
 function App() {
   return (
     <div className='App'>
-      <div className='h-screen flex m-auto bg-black'></div>
+      <div className='flex h-screen m-auto bg-black'></div>
     </div>
   );
 }
