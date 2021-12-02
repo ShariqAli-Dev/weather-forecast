@@ -2,7 +2,7 @@ import Location from './components/Location';
 
 const App = () => {
   return (
-    <div className='flex flex-col h-screen'>
+    <div className='flex flex-col h-screen m-5 '>
       {/* Header Component */}
       <div className='flex justify-around'>
         <Location />
