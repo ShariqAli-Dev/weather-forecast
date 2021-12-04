@@ -1,11 +1,12 @@
 const LocationIcon = () => {
   return (
+    // hidden until small
     <svg
       xmlns='http://www.w3.org/2000/svg'
       // mobile first
       // https://tailwindcss.com/docs/responsive-design
       // https://tailwindcss.com/docs/responsive-design
-      className='w-16 h-16 sm:w-10 sm:h-10 md:w-12 md:h-12'
+      className='sm:w-9 sm:h-9 md:w-14 md:h-14 lg:w-18 lg:h-18'
       fill='none'
       viewBox='0 0 24 24'
       stroke='#1A86E9'

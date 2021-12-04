@@ -2,12 +2,14 @@ import Location from './components/Location';
 
 const App = () => {
   return (
-    <div className='flex flex-col h-screen m-5 '>
+    <div className='flex flex-col h-screen m-5 font-sans '>
       {/* Header Component */}
-      <div className='flex justify-around'>
+      <div className='flex justify-between'>
         <Location />
-        <Location />
-        <Location />
+        {/* <Location />
+        <Location /> */}
+        <div></div>
+        <div></div>
       </div>
 
       {/* Days/ center component */}

@@ -5,16 +5,24 @@ import { State } from '../reducers';
 import LocationIcon from './LocationIcon';
 const Location = () => {
   const { getForecast } = bindActionCreators(ActionCreators, useDispatch());
-  const { city } = useSelector((state: State) => {
+  const { city, latitude, longitude } = useSelector((state: State) => {
     return {
-      city: state.city,
+      city: state.city.name,
+      latitude: state.city.coord.lat.toFixed(2),
+      longitude: state.city.coord.lon.toFixed(2),
     };
   });
 
   return (
-    <div>
+    // TODO: MAKE RESPONSIVE
+    <div className='flex invisible sm:visible'>
       <LocationIcon />
-      <button onClick={getForecast}>Click me for forecast</button>
+      <div style={{ color: '#1A86E9' }}>
+        <p className='text-3xl font-semibold'>{city}</p>
+        <p className='text-sm font-semibold'>
+          {latitude}° N, {longitude}° E
+        </p>
+      </div>
     </div>
   );
 };
