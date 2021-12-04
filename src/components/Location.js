@@ -8,7 +8,7 @@ const Location = ({ city, latitude, longitude }) => {
     <div className='flex invisible sm:visible'>
       <LocationIcon />
       <div style={{ color: '#1A86E9' }}>
-        <p className='text-3xl font-semibold'>{city}</p>
+        <p className='text-xl font-semibold'>{city}</p>
         <p className='text-sm font-semibold'>
           {latitude}° N, {longitude}° E
         </p>

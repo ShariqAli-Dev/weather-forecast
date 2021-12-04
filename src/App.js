@@ -1,5 +1,6 @@
 import Location from './components/Location';
 import SearchBar from './components/SearchBar';
+import Calendar from './components/Calendar';
 
 const App = () => {
   return (
@@ -8,8 +9,7 @@ const App = () => {
       <div className='flex justify-between '>
         <Location />
         <SearchBar />
-
-        <div></div>
+        <Calendar />
       </div>
 
       {/* Days/ center component */}

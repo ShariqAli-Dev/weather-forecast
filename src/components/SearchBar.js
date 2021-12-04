@@ -1,21 +1,18 @@
 import { useState } from 'react';
-
+import { connect } from 'react-redux';
+import { getForecast } from '../actions';
 import SearchBarIcon from './SearchBarIcon';
 
-const initialFormValues = {
-  city: '',
-};
-
-const Searchbar = (props) => {
-  const [formValues, setFormValues] = useState(initialFormValues);
+const Searchbar = ({ getForecast }) => {
+  const [formValue, setFormValue] = useState('');
   const onChange = (event) => {
-    setFormValues({ ...formValues, [event.target.name]: event.target.value });
+    setFormValue(event.target.value);
   };
 
   const onSubmit = (event) => {
     event.preventDefault();
-    console.log('something happening');
-    // getForecast('new york');
+    getForecast(formValue);
+    setFormValue('');
   };
 
   return (
@@ -28,7 +25,7 @@ const Searchbar = (props) => {
         type='text'
         id='city'
         name='city'
-        value={formValues.city}
+        value={formValue}
         onChange={onChange}
         placeholder='search city'
       />
@@ -36,4 +33,8 @@ const Searchbar = (props) => {
   );
 };
 
-export default Searchbar;
+const mapStateToProps = (state) => {
+  return {};
+};
+
+export default connect(mapStateToProps, { getForecast })(Searchbar);
