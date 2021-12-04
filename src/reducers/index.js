@@ -1,10 +1,11 @@
 import { applyMiddleware, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
-import forecastDummyData from '../data/forecast';
+import forecastData from '../data/forecast';
+
 import { GOT_FORECAST, API_FAILED } from '../actions/';
 
-const inititalState = forecastDummyData;
+const inititalState = forecastData;
 
 // https://www.youtube.com/watch?v=udr2rx_B99w&ab_channel=LaithHarb
 const reducer = (state = inititalState, action) => {

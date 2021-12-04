@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import SearchBarIcon from './SearchBarIcon';
 
 const initialFormValues = {
@@ -6,8 +7,6 @@ const initialFormValues = {
 };
 
 const Searchbar = (props) => {
-  // TODO: On erro submit where city is typed incorrectly. Send a toast error
-  // const { getForecast } = bindActionCreators(actionCreators, useDispatch);
   const [formValues, setFormValues] = useState(initialFormValues);
   const onChange = (event) => {
     setFormValues({ ...formValues, [event.target.name]: event.target.value });
@@ -16,7 +15,6 @@ const Searchbar = (props) => {
   const onSubmit = (event) => {
     event.preventDefault();
     console.log('something happening');
-    // getForecast('new york');
     // getForecast('new york');
   };
 
