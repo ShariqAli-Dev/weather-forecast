@@ -1,14 +1,14 @@
 import Location from './components/Location';
+import SearchBar from './components/SearchBar';
 
 const App = () => {
   return (
     <div className='flex flex-col h-screen m-5 font-sans '>
       {/* Header Component */}
-      <div className='flex justify-between'>
+      <div className='flex justify-between '>
         <Location />
-        {/* <Location />
-        <Location /> */}
-        <div></div>
+        <SearchBar />
+
         <div></div>
       </div>
 
