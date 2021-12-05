@@ -13,10 +13,12 @@ const Calendar = () => {
         <CalenderIcon />
         <div style={{ color: '#1A86E9' }}>
           <Clock />
-          <p className='text-sm font-semibold md:text-lg'>
+          <p className='text-sm md:text-base lg:text-lg xl:text-xl'>
             {Days[time.getDay()]} {time.getDate()}
           </p>
-          <p className='text-sm font-semibold'>{Months[time.getMonth()]}</p>
+          <p className='text-sm md:text-base lg:text-lg xl:text-xl'>
+            {Months[time.getMonth()]}
+          </p>
         </div>
       </div>
     </div>

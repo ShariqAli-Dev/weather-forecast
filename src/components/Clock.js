@@ -11,7 +11,11 @@ const Clock = () => {
     };
   });
 
-  return <p className='text-xl font-semibold '>{time.toLocaleTimeString()}</p>;
+  return (
+    <p className='text-lg font-semibold md:text-xl lg:text-2xl xl:text-3xl'>
+      {time.toLocaleTimeString().replace(/:\d+ /, ' ')}
+    </p>
+  );
 };
 
 export default Clock;

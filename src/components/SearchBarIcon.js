@@ -2,7 +2,7 @@ const SearchbarIcon = () => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      className='w-6 h-6 mx-3'
+      className='w-6 h-6 mx-1 md:w-7 lg:mx-3 md:h-7 lg:w-9 lg:h-9'
       fill='none'
       viewBox='0 0 24 24'
       stroke='currentColor'
