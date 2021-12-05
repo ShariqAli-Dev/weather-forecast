@@ -13,7 +13,7 @@ const Calendar = () => {
         <CalenderIcon />
         <div style={{ color: '#1A86E9' }}>
           <Clock />
-          <p className='text-sm font-semibold'>
+          <p className='text-sm font-semibold md:text-lg'>
             {Days[time.getDay()]} {time.getDate()}
           </p>
           <p className='text-sm font-semibold'>{Months[time.getMonth()]}</p>

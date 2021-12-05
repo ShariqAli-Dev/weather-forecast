@@ -2,10 +2,10 @@ const CalendarIcon = () => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      className='w-12 h-12'
+      className='text-blue-500 w-9 h-9 md:w-14 md:h-14'
       fill='none'
       viewBox='0 0 24 24'
-      stroke='#1A86E9'
+      stroke='currentColor'
     >
       <path
         strokeLinecap='round'
