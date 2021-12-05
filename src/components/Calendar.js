@@ -1,11 +1,10 @@
-import { useState } from 'react';
 import CalenderIcon from './CalendarIcon';
 import Days from '../data/days';
 import Months from '../data/months';
 import Clock from './Clock';
 
 const Calendar = () => {
-  const [time, setTime] = useState(new Date());
+  const time = new Date();
 
   return (
     <div>

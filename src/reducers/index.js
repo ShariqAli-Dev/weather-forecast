@@ -7,11 +7,16 @@ import { GOT_FORECAST, API_FAILED } from '../actions/';
 
 const inititalState = forecastData;
 
+/*
+const initialState = {
+  city: {},
+  error: ''
+}
+*/
 // https://www.youtube.com/watch?v=udr2rx_B99w&ab_channel=LaithHarb
 const reducer = (state = inititalState, action) => {
   switch (action.type) {
     case GOT_FORECAST:
-      console.log(action.payload);
       return action.payload;
     case API_FAILED:
       return state;
